@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* Estilo base para el contenedor principal */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: lightblue;
+    height: 100vh;
+    position: relative;
+
+}
+
+/* Contenedor principal */
+.container {
+   position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: antiquewhite;
+    width: 40vw;
+    max-width: 300px;
+    height: 70%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container p{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+}
+
+
+
+/* Título */
+h1 {
+    font-size: 2vw; /* Tamaño de fuente relativo */
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+/* Párrafos */
+.parrafo {
+    font-size: 1vw; /* Tamaño de fuente relativo */
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+p {
+    font-size: 3vw;
+    
+}
+
+/* Lista */
+ul {
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+li {
+    font-size: 1vw; /* Tamaño de fuente relativo */
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 750px){ 
+    body{
+        background-color: palevioletred;
+    }
+    .container p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Ajusta el párrafo para que su centro coincida con el centro del contenedor */
+        margin: 0;
+        font-size: 1.2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+    .container{
+        background-color: aquamarine;
+        color: red;
+        width: 25vw;
+        max-width: 300px;
+        height: 80vw;
+        max-height: 750px;
+    }
+} 
+
+
+
+@media (min-width: 1200px){
+    .container{
+        background-color: beige;
+        color: black;
+        width: 20vw;
+        max-width: 300px;
+        height: 50vw;
+        max-height: 750px;
+        
+    }
+    .container p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Ajusta el párrafo para que su centro coincida con el centro del contenedor */
+        margin: 0;
+    }
+    body{
+        background-color: orangered;
+        
+    }
+}
