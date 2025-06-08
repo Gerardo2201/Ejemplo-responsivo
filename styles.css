@@ -88,13 +88,178 @@ li {
 
 
 
+@media (min-width: 0px){
+body{
+    background-color: gray;}
+
+.container{
+    background-color: darkslategrey;
+    color: white;
+    width: 80vw;
+    margin-left: 10%;
+    height: 70vh;
+    display: block;
+    position: relative;}
+.ImagenAleatoria{
+    width: 50vw;
+    height: 50vw;
+    object-fit: contain;
+    margin: 0 auto;
+    
+   
+}
+.boton{
+    margin: 100px auto;
+    display: block;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 5px ;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    position: static;
+    
+}
+
+.container p{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta el párrafo para que su centro coincida con el centro del contenedor */
+    margin: 0;
+    font-size: 0.8rem;
+    width: 80%;
+    height: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    line-height: 1.5;
+    overflow: auto;
+}
+    h1{
+        font-size: 5vw;
+        margin-left: 10%;
+        margin-top: 10%;
+        
+        text-align: center;
+    }
+    .parrafo{
+        font-size: 4vw;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        
+    }
+    ul{
+        font-size: 0.8rem;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        list-style: none;
+        padding: 0;
+        
+        
+    }
+    li{
+        font-size: 4vw;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
 
 
 
-
-@media (min-width: 750px){ 
+@media (min-width: 361px){ 
     body{
         background-color: palevioletred;
+    }
+
+    .container p{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta el párrafo para que su centro coincida con el centro del contenedor */
+    margin: 0;
+    font-size: 0.8rem;
+    width: 80%;
+    height: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    line-height: 1.5;
+    overflow: auto;
+}
+    
+    .container{
+    background-color: darkslategrey;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 70vh;
+    max-width: 80%;
+    display: block;
+    position: relative;}
+
+    .ImagenAleatoria{
+    width: 50vw;
+    height: 50vw;
+    object-fit: contain;
+    margin: 0 auto;}
+
+    
+    h1{
+        font-size: 5vw;
+        margin-left: 10%;
+        margin-top: 10%;
+        
+        text-align: center;
+    }
+    .parrafo{
+        font-size: 2.5vw;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        
+    }
+    ul{
+        font-size: 0.8rem;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        list-style: none;
+        padding: 0;
+        
+        
+    }
+    li{
+        font-size: 2.5vw;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        display: inline-block;
+        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+} 
+
+
+@media(min-width: 992px){
+    body{
+        background-color: lightcoral;
+    }
+    .container{
+        background-color: lightgoldenrodyellow;
+        color: red;
+        width: 30vw;
+        max-width: 300px;
+        height: 60vw;
+        max-height: 750px;
     }
     .container p{
         position: absolute;
@@ -102,21 +267,8 @@ li {
         left: 50%;
         transform: translate(-50%, -50%); /* Ajusta el párrafo para que su centro coincida con el centro del contenedor */
         margin: 0;
-        font-size: 1.2rem;
-        width: fit-content;
-        height: fit-content;
     }
-    .container{
-        background-color: aquamarine;
-        color: red;
-        width: 25vw;
-        max-width: 300px;
-        height: 80vw;
-        max-height: 750px;
-    }
-} 
-
-
+}
 
 @media (min-width: 1200px){
     .container{
@@ -140,3 +292,4 @@ li {
         
     }
 }
+
